@@ -2,12 +2,12 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import './locomotive.css'
-import useLocomotiveScroll from "./_locomotive";
+import useLocomotiveScroll from "@/utils/locomotive";
 import dynamic from "next/dynamic";
 
 function Home() {
 
-  const Hero = dynamic(() => import('@/components/Hero'), {loading: () => <p>Loading...</p>})
+  const Hero = dynamic(() => import('@/components/Hero'))
   const Register = dynamic(() => import('@/components/Register'))
   const Schedule = dynamic(() => import('@/components/Schedule'))
   const Ticket = dynamic(() => import('@/components/Tickets'))
