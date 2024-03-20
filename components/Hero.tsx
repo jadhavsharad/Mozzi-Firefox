@@ -3,7 +3,7 @@ import element from '@/assets/hero_element.svg'
 import Image from 'next/image';
 import { Audiowide } from 'next/font/google';
 
-const redhatdisplay = Audiowide({weight:['400'], subsets: ['latin']})
+const audiowide = Audiowide({weight:['400'], subsets: ['latin']})
 
 const Hero: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         <div className='relative bg-grid-white/[0.15] px-12 text-xs overflow-x-hidden md:flex items-center justify-between'>
           <div className=" absolute pointer-events-none inset-0 flex items-center justify-center bg-zinc-950 [mask-image:radial-gradient(ellipse_at_center,transparent_0%,black)]"></div>
           <div className='w-1/2 z-10'>
-            <h1 className={`${redhatdisplay.className} md:text-6xl lg:text-7xl xl:text-8xl`}>Mozzi Fire</h1>
+            <h1 className={`${audiowide.className} md:text-6xl lg:text-7xl xl:text-8xl`}>Mozzi Fire</h1>
             <p className='md:text-lg lg:text-xl'>Embrace the Flame of Innovation with Mozzi Fire</p>
             <hr className='border-none my-4' />
             <div className='flex gap-4 items-center text-xs lg:text-sm'>
