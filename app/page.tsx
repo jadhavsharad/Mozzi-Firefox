@@ -3,14 +3,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import './locomotive.css'
 import useLocomotiveScroll from "@/utils/locomotive";
-import dynamic from "next/dynamic";
+import Hero from "@/components/Hero";
+import Schedule from "@/components/Schedule";
+import Ticket from "@/components/Tickets";
+import Register from "@/components/Register";
+
 
 function Home() {
-
-  const Hero = dynamic(() => import('@/components/Hero'))
-  const Register = dynamic(() => import('@/components/Register'))
-  const Schedule = dynamic(() => import('@/components/Schedule'))
-  const Ticket = dynamic(() => import('@/components/Tickets'))
 
   useLocomotiveScroll()
 
