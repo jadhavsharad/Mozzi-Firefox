@@ -1,26 +1,18 @@
 'use client'
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Register from "@/components/Register";
-import Schedule from "@/components/Schedule";
-import Ticket from "@/components/Tickets";
+import Footer from "@/components/Footer";
 import './locomotive.css'
-import { useEffect } from "react";
+import useLocomotiveScroll from "./_locomotive";
+import dynamic from "next/dynamic";
 
 function Home() {
 
-  useEffect(() => {
-    let scroll: import("locomotive-scroll");
-    import("locomotive-scroll").then((locomotiveModule) => {
-      scroll = new locomotiveModule.default();
-    });
+  const Hero = dynamic(() => import('@/components/Hero'), {loading: () => <p>Loading...</p>})
+  const Register = dynamic(() => import('@/components/Register'))
+  const Schedule = dynamic(() => import('@/components/Schedule'))
+  const Ticket = dynamic(() => import('@/components/Tickets'))
 
-    // cleanup phase
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  });
+  useLocomotiveScroll()
 
   return (
     <main className="bg-zinc-950 min-h-svh p-4" data-scroll-container >
