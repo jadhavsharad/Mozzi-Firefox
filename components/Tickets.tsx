@@ -10,17 +10,32 @@ const Ticket: React.FC = () => {
           <Image width={1000} height={1000} src={element} alt='element' />
         </div>
         <div className="w-full lg:w-1/2 relative flex items-center">
-          <div className='absolute h-96 w-64 p-4 border border-orange-500 rounded-2xl bg-zinc-950 scale-90 left-[50%] hover:left-[55%] duration-300 cursor-pointer flex flex-col justify-between'>
-            <h1 className='text-5xl bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent text-center font-bold'>Regular</h1>
-            <button className='border ticket_buy_button py-3 font-bold border-orange-500 rounded-[100px]'>Buy Now</button>
+          <div className='absolute h-72 w-52 p-4 border border-orange-500 rounded-2xl bg-zinc-950 scale-90 left-[50%] hover:left-[65%] duration-300 cursor-pointer flex flex-col justify-between'>
+            <h1 className='text-2xl bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent text-center font-bold'>Regular</h1>
+            <div className='flex flex-col text-2xl text-center'>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>Get</span>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>At</span>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>Rs. 499</span>
+            </div>
+            <button className='border ticket_buy_button py-2 font-bold border-orange-500 rounded-[100px]'>Buy Now</button>
           </div>
-          <div className='absolute h-96 w-64 p-4 border border-orange-500 rounded-2xl bg-zinc-950 scale-90 right-[50%] hover:right-[55%] duration-300 cursor-pointer flex flex-col justify-between'>
-            <h1 className='text-5xl bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent text-center font-bold'>VIP</h1>
-            <button className='border ticket_buy_button py-3 font-bold border-orange-500 rounded-[100px]'>Buy Now</button>
+          <div className='absolute h-72 w-52 p-4 border border-orange-500 rounded-2xl bg-zinc-950 scale-90 right-[50%] hover:right-[65%] duration-300 cursor-pointer flex flex-col justify-between'>
+            <h1 className='text-2xl bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent text-center font-bold'>VIP</h1>
+            <div className='flex flex-col text-2xl text-center'>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>Get</span>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>At</span>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>Rs. 699</span>
+            </div>
+            <button className='border ticket_buy_button py-2 font-bold border-orange-500 rounded-[100px]'>Buy Now</button>
           </div>
-          <div className='absolute h-96 w-64 p-4 border border-orange-500 rounded-2xl bg-zinc-950 flex left-1/2 -translate-x-1/2 flex-col justify-between'>
-            <h1 className='text-5xl bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent text-center font-bold'>Early Bird</h1>
-            <button className='border ticket_buy_button py-3 font-bold border-orange-500 rounded-[100px]'>Buy Now</button>
+          <div className='absolute h-72 w-52 p-4 border border-orange-500 rounded-2xl bg-zinc-950 flex left-1/2 -translate-x-1/2 flex-col justify-between'>
+            <h1 className='text-2xl bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent text-center font-bold'>Early Bird</h1>
+            <div className='flex flex-col text-2xl text-center'>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>Get</span>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>At</span>
+            <span className='bg-gradient-conic from-white to-orange-500 bg-clip-text text-transparent'>Rs. 249</span>
+            </div>
+            <button className='border ticket_buy_button py-2 font-bold border-orange-500 rounded-[100px]'>Buy Now</button>
           </div>
         </div>
       </div>
